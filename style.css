@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --primary: #fb0a74;
+    --secondary: #da9d8c;
+    --accent: #e0795b;
+    --background: #fb0a74;
+    --text: #f3f4fa;
+    --secondary-text: #1d1d1d;
+}
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 0;
+}
+
+nav{
+    
+    background-color: var(--background);
+}
+
+.nav-link {
+    color: var(--text);
+}
+
+.home {
+    height: 100vh;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: radial-gradient(var(--background) 0.5px, #e5e5f7 0.5px);
+    background-size: 10px 10px;
+}
+
+.intro h1 {
+    color: var(--primary);
+}
+
+.events {
+    height: auto;
+    background-color: var(--primary);
+    padding: 0;
+}
+
+.events-info {
+    color: var(--secondary-text);
+}
+
+.event-container {
+    background-color: var(--secondary);
+    color: var(--secondary-text);
+    border-radius: 10px;
+    padding: 10px;
+    min-height: 400px;
+}
+/* Hide the last event on smaller screens */
+@media (max-width: 768px) {
+  .event-info .row .col-md-3:last-child {
+    display: none;
+    align-items: center;
+  }
+}
+
+/* Hide the last two events on even smaller screens */
+@media (max-width: 576px) {
+  .event-info .row .col-md-3:nth-last-child(2),
+  .event-info .row .col-md-3:last-child {
+    display: none;
+    align-items: center;
+  }
+}
+
+/* Hide all events except the first one on very small screens */
+@media (max-width: 480px) {
+  .event-info .row .col-md-3:not(:first-child) {
+    display: none;
+    align-items: center;
+  }
+}
+.event-info .row {
+  justify-content: center;
+  align-items: center;
+}
+
+.faculty {
+    height: auto;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: radial-gradient(var(--background) 0.5px, #e5e5f7 0.5px);
+    background-size: 10px 10px;
+}
+
+footer {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.faculty-container {
+    background-color: var(--secondary);
+    color: var(--secondary-text);
+    border-radius: 10px;
+    padding: 10px;
+    min-height: 400px;
+}
+.testimonials {
+    height: auto;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.testimonials img {
+    border-radius: 10px;
+
+}
+input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+form {
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1));
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5); /* add a semi-transparent background */
+}
+
+  form h2 {
+    margin-bottom: 20px;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #999;
+  }
+
+  .contact-us {
+    height: auto;
+    background-color: none;
+    opacity: 0.8;
+    background-image: radial-gradient(var(--background) 0.5px, #e5e5f7 0.5px);
+    background-size: 10px 10px;
+  }
+
+  .map-container {
+    overflow: hidden;
+    width: auto;
+  }
+  .map-container img{
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+
+  .map-container img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+
+  .icons a {
+    color: var(--primary);
+    margin-left: 10px;
+    font-size: 24px;
+  }
